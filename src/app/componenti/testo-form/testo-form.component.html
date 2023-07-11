@@ -1,0 +1,14 @@
+<app-advanced-hello-world (inviaDatoEvent)="accettaDatoString($event)" [data]="helloWorldLista"></app-advanced-hello-world>   <!--Per motivi di forti dipendenze dovute ad una costruzione del progetto inappropriata, non posso chiamare l'html di "testoFor" senza chiamare quello di "advancedHelloWorld"-->
+<p style="margin-bottom: 40px">Data received from helloWorld: {{datoRicevuto}}</p>
+
+<form #submitForm="ngForm" (ngSubmit)="submitTesto(submitForm)">
+  <input name="testo" ngModel type="text">
+  <button (click)="logTestoInserito()" type="submit">send as log</button>
+</form>
+
+<input style="width: 300px; margin-top: 30px" type="text" [(ngModel)]="testoTempoReale">
+<p></p>
+<div *ngIf="!weAreScreaming()">
+  <a href="http://localhost:4200/testoForm/scream">start screaming</a>
+</div>
+<router-outlet></router-outlet>

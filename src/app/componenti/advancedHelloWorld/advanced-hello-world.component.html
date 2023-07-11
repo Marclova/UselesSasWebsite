@@ -1,0 +1,15 @@
+<div *ngIf="data; else nothing">
+  <span *ngFor="let oggetto of data">
+    <span *ngIf="oggetto.valore != 3">{{oggetto.theContent}} </span>
+  </span>
+</div>
+
+<ng-template #nothing>
+  <span> Oh! Hi... Ehm... Please invoke me using this </span><a routerLink="/testoForm">link</a><span> instead.</span>
+  <p style="margin-top: 100px">It's kind of awkward, but... I don't have got the string needed to say the line actually...</p>
+  <p>The string i'm supposed to say belongs to servizioSas, which gives the string to testoForm... So I need testoForm to say that...</p>
+  <p>But at least I've got an exportable variable containing: {{datoDaEsportare}}</p>
+
+
+</ng-template>
+<!--<p>{{datoDaEsportare}}</p>-->
