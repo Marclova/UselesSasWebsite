@@ -1,12 +1,11 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {ServizioSasService} from "../../services/servizio-sas.service";
 
 @Component({
   selector: 'app-advanced-hello-world',
   templateUrl: './advanced-hello-world.component.html',
   styleUrls: ['./advanced-hello-world.component.scss']
 })
-export class AdvancedHelloWorld {
+export class AdvancedHelloWorld implements OnInit{
 
   constructor() {
   }

@@ -1,11 +1,11 @@
-import {Injectable, OnInit} from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServizioSasService{
 
-  private valoreCusuc: any;
+  // private valoreCusuc: any;
 
   private listaHelloWorld = [
     {theContent: "Hello", valore: 1},
@@ -18,17 +18,17 @@ export class ServizioSasService{
 
   ];
 
-  private ses = "sos"
+  // private ses = "sos"
 
   getHelloWorld() {
     return this.listaHelloWorld;
   }
 
-  getSes() {
-    return this.ses;
-  }
+  // getSes() {
+  //   return this.ses;
+  // }
 
-  setValoreCusuc(newV: any){
-    this.valoreCusuc = newV;
-  }
+  // setValoreCusuc(newV: any){
+  //   this.valoreCusuc = newV;
+  // }
 }
