@@ -13,7 +13,7 @@ export class ScreamComponent implements OnInit {
 
   length = 1;
   lastLength = 1;
-  aSequence = "a";
+  screamList: Array<String> = [];
 
 
   ngOnInit(): void {
@@ -29,9 +29,10 @@ export class ScreamComponent implements OnInit {
     if (this.length > 1 && this.lastLength != this.length) {
       let i = 0;
       let logScream ="";
+      let newScream: String = "";
+      this.screamList.push(newScream)
       const screamer = interval(100).subscribe(() => {
-        if(i >= this.lastLength)
-          this.aSequence += "a";
+        newScream += "a";
         logScream += "a";
         console.log("Scre"+logScream+"m!")
         i++;

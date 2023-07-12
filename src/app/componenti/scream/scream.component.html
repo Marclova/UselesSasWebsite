@@ -2,6 +2,8 @@
 <span>current screaming length: {{getRoundedUpLength()}}</span>
 <p>Reload the page to make it stop screaming</p>
 <p>(visualizing console log is highly recommended)</p>
-<span>the silent scre</span>
-<span>{{aSequence}}</span>
-<span>m!</span>
+<div *ngFor="let scream of screamList">
+  <span>the silent scre</span>
+  <span style="word-wrap: break-word">{{scream}}</span>
+  <span>m!</span>
+</div>

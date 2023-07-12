@@ -1,6 +1,7 @@
 <div *ngIf="data; else nothing">
   <span *ngFor="let oggetto of data">
-    <span *ngIf="oggetto.valore != 3">{{oggetto.theContent}} </span>
+    <span *ngIf="oggetto.valore != 3">
+      {{oggetto.theContent}} </span>
   </span>
 </div>
 
