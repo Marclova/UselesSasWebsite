@@ -14,7 +14,6 @@
 chrome-profiler-events*.json
 
 # IDEs and editors
-/.vs
 /.idea
 .project
 .classpath
@@ -44,4 +43,5 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-/.vs/UselesSasWebsite/config/applicationhost.config
+/.vs
+/obj/Debug
