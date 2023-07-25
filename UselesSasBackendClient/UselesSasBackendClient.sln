@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UselesSasBackendClient", "UselesSasBackendClient.csproj", "{BCB74DD5-4CE8-4093-B547-91D285EC96BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCB74DD5-4CE8-4093-B547-91D285EC96BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCB74DD5-4CE8-4093-B547-91D285EC96BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCB74DD5-4CE8-4093-B547-91D285EC96BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCB74DD5-4CE8-4093-B547-91D285EC96BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {153EC20C-D38A-4ACF-8133-53C951825C2A}
+	EndGlobalSection
+EndGlobal

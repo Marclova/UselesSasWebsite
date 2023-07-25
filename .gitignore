@@ -45,3 +45,8 @@ testem.log
 Thumbs.db
 /.vs
 /obj/Debug
+/UselesSasBackendClient/.vs
+/UselesSasBackendClient/bin/Debug/net6.0
+/UselesSasBackendClient/obj/Debug/net6.0
+/UselesSasBackendClient/obj
+/UselesSasBackendClient/Properties
