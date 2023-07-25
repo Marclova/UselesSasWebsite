@@ -7,7 +7,7 @@ export class ServizioSasService{
 
   // private valoreCusuc: any;
 
-  private listaHelloWorld = [
+  private listaHelloWorld = [  //this key-value collection is required by Testo-form and then delivered to AdvancedHelloWorld
     {theContent: "Hello", valore: 1},
     {theContent: "1", valore: 3},
     {theContent: "world!", valore: 5},

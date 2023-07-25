@@ -10,23 +10,11 @@ export class AdvancedHelloWorld implements OnInit{
   constructor() {
   }
 
-  // lista = [
-  //   {testo: "hello", valore: 1},
-  //   {testo: "1", valore: 3},
-  //   {testo: "world", valore: 5}
-  // ];
-
-  // lista = [
-  //   {valore: "1"},
-  //   {valore: "3"},
-  //   {valore: "5"}
-  // ]
-
   @Input()
-  data: any;
+  data: any; //Questo dato è in attesa per venir assegnato dall'HTML di un componente  padre (da testo-form in questo caso)
 
   @Output()
-  inviaDatoEvent = new EventEmitter();
+  inviaDatoEvent = new EventEmitter(); //tramite il comando emit questo dato verrà inviato ai componenti padre in ascolto (a testo-form in questo caso)
 
   datoDaEsportare = "TEXT!";
 

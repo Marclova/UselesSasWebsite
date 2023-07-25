@@ -5,7 +5,7 @@ import { observable, Observable, Observer, Subject } from 'rxjs';
 
 
 @Injectable()
-export class WebsocketService {
+export class WebsocketService {  //THAT'S ALL WORK IN PROGRESS!!!
 
   constructor() { }
 

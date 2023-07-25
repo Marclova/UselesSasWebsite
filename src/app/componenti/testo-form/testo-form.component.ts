@@ -8,22 +8,22 @@ import {NgForm} from "@angular/forms";
   templateUrl: './testo-form.component.html',
   styleUrls: ['./testo-form.component.scss']
 })
-export class TestoFormComponent implements OnInit{
+export class TestoFormComponent{
 
   constructor(private servizioSasService: ServizioSasService, private router: Router) {
   }
 
-  datoRicevuto = "";
-  helloWorldLista = this.servizioSasService.getHelloWorld();
+  datoRicevuto = "";  //receive from AdvancedHelloWorld
+  helloWorldLista = this.servizioSasService.getHelloWorld();  //receive from ServizioSasService and then send to AdvancedHelloWorld
 
   accettaDatoString(t: string) {
     this.datoRicevuto = t;
   }
 
   @ViewChild('submitForm')
-  formCompilato!: NgForm;
+  formCompilato!: NgForm;  //Prende i dati dall'input della view (one-way-data-binding)
 
-  testoTempoReale = "this text is being saved in real-time into the ts file";
+  testoTempoReale = "this text is being saved in real-time into the ts file";  //Interscambia i dati con la view (two-way-data-binding)
 
   logTestoInserito() {
     console.log("testoInserito = "+this.formCompilato.value.testo)
@@ -35,9 +35,5 @@ export class TestoFormComponent implements OnInit{
 
   submitTesto(t: NgForm) {
     console.log(t);
-  }
-
-  ngOnInit() {
-    // this.formCompilato = new NgForm({testo="prova"});
   }
 }

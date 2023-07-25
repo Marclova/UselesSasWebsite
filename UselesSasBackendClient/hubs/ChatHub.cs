@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.SignalR;
 
-namespace UselesSasBackendClient.hubs
+namespace UselesSasBackendClient.hubs  //THAT'S ALL WORK IN PROGRESS!!!
 {
   public class ChatHub : Hub
   {
